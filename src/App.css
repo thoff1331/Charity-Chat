@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(68, 51, 84);
+}
+
+.home-title {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+}
