@@ -26,7 +26,15 @@ class Home extends Component {
   };
 
   render() {
-    return <h1>Charity-Chat</h1>;
+    return (
+      <div>
+        <h1>Charity-Chat</h1>
+        <div>
+          <button className="home-button">Login</button>
+          <button className="home-button">Sign-Up</button>
+        </div>
+      </div>
+    );
   }
 }
 
