@@ -4,8 +4,12 @@ import Home from "./Components/home";
 
 function App() {
   return (
-    <div className="home-title">
-      <Home />
+    <div>
+      <div className="home-title">
+        <Home />
+        <div />
+        <div className="header">{/* <header>Charity-Chat</header> */}</div>
+      </div>
     </div>
   );
 }

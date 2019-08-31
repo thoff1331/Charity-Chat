@@ -27,11 +27,12 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="title-buttons">
         <h1>Charity-Chat</h1>
         <div>
           <button className="home-button">Login</button>
           <button className="home-button">Sign-Up</button>
+          <button className="home-button">Settings</button>
         </div>
       </div>
     );
