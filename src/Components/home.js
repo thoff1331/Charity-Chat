@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Login from "../Components/login";
 
 class Home extends Component {
   constructor(props) {
@@ -9,6 +10,16 @@ class Home extends Component {
       password: ""
     };
   }
+  handleLoginClick = e => {
+    return (
+      <div className="login-form">
+        <input />
+        <label>username</label>
+        <input />
+        <label>password</label>
+      </div>
+    );
+  };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -30,7 +41,9 @@ class Home extends Component {
       <div className="title-buttons">
         <h1>Charity-Chat</h1>
         <div>
-          <button className="home-button">Login</button>
+          <button onClick={<Login />} className="home-button">
+            Login
+          </button>
           <button className="home-button">Sign-Up</button>
           <button className="home-button">Settings</button>
         </div>
